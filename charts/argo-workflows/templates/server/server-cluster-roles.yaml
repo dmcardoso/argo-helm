@@ -51,7 +51,6 @@ rules:
   - secrets
   verbs:
   - create
-  {{- if .Values.server.sso.rbac }}
 - apiGroups:
   - ""
   resources:
@@ -60,7 +59,6 @@ rules:
   - get
   - list
   - watch
-  {{- end }}
 {{- end }}
 - apiGroups:
   - ""
